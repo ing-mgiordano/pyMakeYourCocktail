@@ -13,7 +13,7 @@ const Formulario = () => {
                         <Form.Control 
                             id="nombre"
                             type="text"
-                            placeholder="Ej: Tequila, Vodka, etc"
+                            placeholder="Ej: Tequila, Gin, etc"
                             name="nombre"
                         />
                     </Form.Group>
