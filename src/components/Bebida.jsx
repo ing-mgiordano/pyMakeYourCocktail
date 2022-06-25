@@ -3,7 +3,7 @@ import useBebidas from "../hooks/useBebidas"
 
 const Bebida = ({bebida}) => {
 
-    const {handleModaleClick} = useBebidas()
+    const {handleModaleClick, handleBebidaIdClick} = useBebidas()
 
     return (
         <Col md={6} lg={3}>
@@ -23,9 +23,10 @@ const Bebida = ({bebida}) => {
                         className="w-100 text-uppercase mt-2"
                         onClick={() => {
                             handleModaleClick()
+                            handleBebidaIdClick(bebida.idDrink)
                         }}
                     >
-                        Ver Receta
+                        Recipe
                     </Button>
                 </Card.Body>
             </Card>

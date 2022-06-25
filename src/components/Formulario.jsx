@@ -34,13 +34,13 @@ const Formulario = () => {
                 <Col md={6}>
                     <Form.Group className="mb-3">
                         <Form.Label htmlFor="nombre">
-                            Nombre Bebida
+                            Cocktail Name
                         </Form.Label>
                     
                         <Form.Control 
                             id="nombre"
                             type="text"
-                            placeholder="Ej: Tequila, Gin, etc"
+                            placeholder="Ex: Tequila, Gin, etc"
                             name="nombre"
                             value={busqueda.nombre}
                             onChange={e => setBusqueda({
@@ -53,7 +53,7 @@ const Formulario = () => {
                 <Col md={6}>
                     <Form.Group className="mb-3">
                         <Form.Label htmlFor="categoria">
-                            Categoría Bebida
+                            Cocktail Category
                         </Form.Label>
                     
                         <Form.Select
@@ -65,7 +65,7 @@ const Formulario = () => {
                                 [e.target.name]: e.target.value
                             })}
                         >
-                            <option>-- Selecciona Categoría --</option>
+                            <option>-- Select Category --</option>
                             {categorias.map(categoria => (
                                 <option
                                     key={categoria.strCategory}
@@ -86,7 +86,7 @@ const Formulario = () => {
                         className="text-uppercase w-100"
                         type="submit"
                     >
-                        Buscar Bebidas
+                        Find your Cocktail
                     </Button>
                 </Col>
             </Row>
